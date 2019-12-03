@@ -81,7 +81,29 @@ static NSString *const cardsArrayKey = @"cards";
 }
 + (void) fetchCardImage:(DVMCard *)card completion:(void (^)(UIImage * _Nullable))completion
 {
-    
+    NSURL *imageURL = [NSURL URLWithString:card.imageString];
+    [[[NSURLSession sharedSession] dataTaskWithURL:imageURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error)
+        {
+            NSLog(@"There was an error: %@, %@", error, [error localizedDescription]);
+            completion(nil);
+            return;
+        }
+        if (response)
+        {
+            NSLog(@"Response: %@", response);
+        }
+        if (!data)
+        {
+            NSLog(@"Error retrieving data: %@", [error localizedDescription]);
+            completion(nil);
+            return;
+        }
+        
+        UIImage *cardImage = [UIImage imageWithData:data];
+        completion(cardImage);
+        
+    }] resume];
 }
 
 @end

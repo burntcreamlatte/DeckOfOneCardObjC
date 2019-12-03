@@ -34,7 +34,7 @@
     NSString *cardSuit = self.cardLabel;
     UIImage *cardImage = self.cardImageView;
     
-    [[DVMCardController shared] drawANewCard]
+    //[[DVMCardController shared] drawANewCard]
 }
 
 - (void) updateViews

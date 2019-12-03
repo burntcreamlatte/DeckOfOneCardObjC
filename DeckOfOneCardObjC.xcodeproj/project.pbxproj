@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		ABD6080B2396E88F0086202D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6080A2396E88F0086202D /* AppDelegate.m */; };
 		ABD6080E2396E88F0086202D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6080D2396E88F0086202D /* SceneDelegate.m */; };
-		ABD608112396E88F0086202D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD608102396E88F0086202D /* ViewController.m */; };
 		ABD608142396E88F0086202D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD608122396E88F0086202D /* Main.storyboard */; };
 		ABD608162396E8900086202D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD608152396E8900086202D /* Assets.xcassets */; };
 		ABD608192396E8900086202D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD608172396E8900086202D /* LaunchScreen.storyboard */; };
 		ABD6081C2396E8900086202D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6081B2396E8900086202D /* main.m */; };
+		ABD608292396ED340086202D /* DVMCard.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD608282396ED340086202D /* DVMCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +22,13 @@
 		ABD6080A2396E88F0086202D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ABD6080C2396E88F0086202D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		ABD6080D2396E88F0086202D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		ABD6080F2396E88F0086202D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ABD608102396E88F0086202D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ABD608132396E88F0086202D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABD608152396E8900086202D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABD608182396E8900086202D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABD6081A2396E8900086202D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD6081B2396E8900086202D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABD608272396ED340086202D /* DVMCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCard.h; sourceTree = "<group>"; };
+		ABD608282396ED340086202D /* DVMCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +61,59 @@
 		ABD608082396E88F0086202D /* DeckOfOneCardObjC */ = {
 			isa = PBXGroup;
 			children = (
+				ABD608252396E9970086202D /* Model Controllers */,
+				ABD608242396E9910086202D /* View Controllers */,
+				ABD608232396E9880086202D /* Models */,
+				ABD608222396E8A60086202D /* Resources */,
+				ABD608262396E9A20086202D /* Storyboards */,
+			);
+			path = DeckOfOneCardObjC;
+			sourceTree = "<group>";
+		};
+		ABD608222396E8A60086202D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				ABD608092396E88F0086202D /* AppDelegate.h */,
 				ABD6080A2396E88F0086202D /* AppDelegate.m */,
 				ABD6080C2396E88F0086202D /* SceneDelegate.h */,
 				ABD6080D2396E88F0086202D /* SceneDelegate.m */,
-				ABD6080F2396E88F0086202D /* ViewController.h */,
-				ABD608102396E88F0086202D /* ViewController.m */,
-				ABD608122396E88F0086202D /* Main.storyboard */,
 				ABD608152396E8900086202D /* Assets.xcassets */,
-				ABD608172396E8900086202D /* LaunchScreen.storyboard */,
 				ABD6081A2396E8900086202D /* Info.plist */,
 				ABD6081B2396E8900086202D /* main.m */,
 			);
-			path = DeckOfOneCardObjC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABD608232396E9880086202D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABD608272396ED340086202D /* DVMCard.h */,
+				ABD608282396ED340086202D /* DVMCard.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABD608242396E9910086202D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		ABD608252396E9970086202D /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		ABD608262396E9A20086202D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ABD608122396E88F0086202D /* Main.storyboard */,
+				ABD608172396E8900086202D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +186,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABD608112396E88F0086202D /* ViewController.m in Sources */,
 				ABD6080B2396E88F0086202D /* AppDelegate.m in Sources */,
+				ABD608292396ED340086202D /* DVMCard.m in Sources */,
 				ABD6081C2396E8900086202D /* main.m in Sources */,
 				ABD6080E2396E88F0086202D /* SceneDelegate.m in Sources */,
 			);
@@ -291,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
-				INFOPLIST_FILE = DeckOfOneCardObjC/Info.plist;
+				INFOPLIST_FILE = DeckOfOneCardObjC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
-				INFOPLIST_FILE = DeckOfOneCardObjC/Info.plist;
+				INFOPLIST_FILE = DeckOfOneCardObjC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

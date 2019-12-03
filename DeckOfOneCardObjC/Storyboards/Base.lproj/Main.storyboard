@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kcq-0u-e4f">
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(card)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUb-KF-Vqp">
+                                        <rect key="frame" x="166" y="0.0" width="62" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icloud" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g9w-7S-PqC">
+                                        <rect key="frame" x="0.0" y="142.5" width="394" height="512"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="515.5" id="Ypo-5v-RFX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBh-Aa-Dlu">
+                                        <rect key="frame" x="151" y="762" width="92" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Draw Card"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="g9w-7S-PqC" firstAttribute="centerY" secondItem="Kcq-0u-e4f" secondAttribute="centerY" id="9iF-ho-RWR"/>
+                                    <constraint firstItem="g9w-7S-PqC" firstAttribute="leading" secondItem="Kcq-0u-e4f" secondAttribute="leadingMargin" id="HYQ-97-0s0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Kcq-0u-e4f" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="EBN-0r-bYF"/>
+                            <constraint firstItem="Kcq-0u-e4f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="GRn-KV-dAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kcq-0u-e4f" secondAttribute="bottom" constant="10" id="Wzq-Ei-jTh"/>
+                            <constraint firstItem="Kcq-0u-e4f" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dSK-WW-cs1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kcq-0u-e4f" secondAttribute="trailing" constant="10" id="iUS-5K-1Zn"/>
+                            <constraint firstItem="Kcq-0u-e4f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="yHV-Sa-9uf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icloud" catalog="system" width="64" height="44"/>
+    </resources>
+</document>

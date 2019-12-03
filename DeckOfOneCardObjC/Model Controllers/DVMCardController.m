@@ -18,6 +18,15 @@ static NSString *const cardsArrayKey = @"cards";
 
 @implementation DVMCardController
 
++ (DVMCardController *) shared {
+    static DVMCardController *shared = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        shared = [DVMCardController new];
+    });
+    return shared;
+}
+
 + (void) drawANewCard:(NSNumber *)numberOfCards completion:(void (^)(NSArray<DVMCard *> * _Nullable))completion
 {
     NSURL *baseURL = [NSURL URLWithString:baseURLConstantString];

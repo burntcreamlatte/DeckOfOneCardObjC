@@ -15,6 +15,7 @@
 		ABD6081C2396E8900086202D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6081B2396E8900086202D /* main.m */; };
 		ABD608292396ED340086202D /* DVMCard.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD608282396ED340086202D /* DVMCard.m */; };
 		ABD6082C239708BF0086202D /* DVMCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6082B239708BF0086202D /* DVMCardController.m */; };
+		ABEB9B9823971C0E004E7132 /* DVMCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEB9B9723971C0E004E7132 /* DVMCardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		ABD608282396ED340086202D /* DVMCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCard.m; sourceTree = "<group>"; };
 		ABD6082A239708BF0086202D /* DVMCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCardController.h; sourceTree = "<group>"; };
 		ABD6082B239708BF0086202D /* DVMCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCardController.m; sourceTree = "<group>"; };
+		ABEB9B9623971C0E004E7132 /* DVMCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCardViewController.h; sourceTree = "<group>"; };
+		ABEB9B9723971C0E004E7132 /* DVMCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 		ABD608242396E9910086202D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ABEB9B9623971C0E004E7132 /* DVMCardViewController.h */,
+				ABEB9B9723971C0E004E7132 /* DVMCardViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 				ABD6082C239708BF0086202D /* DVMCardController.m in Sources */,
 				ABD608292396ED340086202D /* DVMCard.m in Sources */,
 				ABD6081C2396E8900086202D /* main.m in Sources */,
+				ABEB9B9823971C0E004E7132 /* DVMCardViewController.m in Sources */,
 				ABD6080E2396E88F0086202D /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

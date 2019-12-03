@@ -9,7 +9,7 @@
 //https://deckofcardsapi.com/api/deck/new/draw/?count=1
 #import "DVMCard.h"
 
-//not 100% sure where keys should go; got frustrated and just made them static to make the app work
+//not 100% sure where keys should go; got frustrated and just made them static to make the app work since the instructions asked to make a static method
 static NSString *suitKey = @"suit";
 static NSString *imageKey = @"image";
 static NSString *valueKey = @"value";

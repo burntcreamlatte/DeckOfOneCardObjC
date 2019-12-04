@@ -16,11 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DVMCardController : NSObject
 
-//singleton
-+ (DVMCardController *) shared;
-
 //static draw card method with completion handler, nullable allows us to ignore error handling for now
-+ (void) drawANewCard:(NSNumber *)numberOfCards completion:(void(^) (NSArray<DVMCard *> *_Nullable cards))completion;
++ (void) drawANewCard:(NSInteger *)numberOfCards completion:(void(^) (NSArray<DVMCard *> *_Nullable cards))completion;
 
 //static card image fetcher with completion handler, same nullable comment as above for drawing card
 + (void) fetchCardImage:(DVMCard *)card completion:(void(^) (UIImage *_Nullable image))completion;

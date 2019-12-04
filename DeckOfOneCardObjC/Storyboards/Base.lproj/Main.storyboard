@@ -30,8 +30,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icloud" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g9w-7S-PqC">
-                                        <rect key="frame" x="0.0" y="142.5" width="394" height="512"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g9w-7S-PqC">
+                                        <rect key="frame" x="0.0" y="141.5" width="394" height="515.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="515.5" id="Ypo-5v-RFX"/>
                                         </constraints>
@@ -41,7 +41,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Draw Card"/>
                                         <connections>
-                                            <action selector="drawCardButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U4L-Tt-ixd"/>
+                                            <action selector="drawCardButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oh8-1n-Hxh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -63,9 +63,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="cardImageView" destination="g9w-7S-PqC" id="x1v-HV-uJd"/>
-                        <outlet property="cardSuitLabel" destination="HUb-KF-Vqp" id="lxD-Hf-G0P"/>
-                        <outlet property="cardValueLabel" destination="aia-iB-dEs" id="I9H-YD-Hul"/>
+                        <outlet property="cardImageView" destination="g9w-7S-PqC" id="Qby-WF-bg5"/>
+                        <outlet property="cardSuitLabel" destination="HUb-KF-Vqp" id="G0C-Q8-rFv"/>
+                        <outlet property="cardValueLabel" destination="aia-iB-dEs" id="aW4-ez-ZcQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -73,7 +73,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="icloud" catalog="system" width="64" height="44"/>
-    </resources>
 </document>

@@ -11,7 +11,7 @@
 
 //static constant URL properties above the implementation
 static NSString *const baseURLConstantString = @"https://deckofcardsapi.com/api/deck/new/";
-static NSString *const drawComponent = @"draw";
+static NSString *const drawComponent = @"draw/";
 static NSString *const countQuery = @"count";
 //for use in data tasking
 static NSString *const cardsArrayKey = @"cards";
@@ -27,11 +27,11 @@ static NSString *const cardsArrayKey = @"cards";
     return shared;
 }
 
-+ (void) drawANewCard:(NSNumber *)numberOfCards completion:(void (^)(NSArray<DVMCard *> * _Nullable))completion
++ (void) drawANewCard:(NSInteger *)numberOfCards completion:(void (^)(NSArray<DVMCard *> * _Nullable))completion
 {
     NSURL *baseURL = [NSURL URLWithString:baseURLConstantString];
     NSURL *drawURL = [baseURL URLByAppendingPathComponent:drawComponent];
-    NSString *cardCountAsString = [numberOfCards stringValue];
+    NSString *cardCountAsString = [NSString stringWithFormat:@"%i", numberOfCards];
     
     NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:drawURL resolvingAgainstBaseURL:true];
     NSURLQueryItem *queryItems = [NSURLQueryItem queryItemWithName:countQuery value:cardCountAsString];

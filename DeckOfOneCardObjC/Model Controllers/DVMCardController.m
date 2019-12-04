@@ -31,7 +31,6 @@ static NSString *const cardsArrayKey = @"cards";
 {
     NSURL *baseURL = [NSURL URLWithString:baseURLConstantString];
     NSURL *drawURL = [baseURL URLByAppendingPathComponent:drawComponent];
-    //using an NSNumber on numberOfCards allows to be able to single-line here
     NSString *cardCountAsString = [numberOfCards stringValue];
     
     NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:drawURL resolvingAgainstBaseURL:true];
@@ -51,14 +50,15 @@ static NSString *const cardsArrayKey = @"cards";
         {
             NSLog(@"Response: %@", response);
         }
-        //wouldn't this guard against nil data best?
+        //no data; returns
+        //is this better to guard against nil data best? or just styling?
         if (!data)
         {
             NSLog(@"Error retrieving data: %@", [error localizedDescription]);
             completion(nil);
             return;
         }
-        NSDictionary *topLevelDict = [NSJSONSerialization JSONObjectWithData:data options: 2 error:&error];
+        NSDictionary *topLevelDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
         if (!topLevelDict)
         {
             NSLog(@"Error passing json: %@", [error localizedDescription]);

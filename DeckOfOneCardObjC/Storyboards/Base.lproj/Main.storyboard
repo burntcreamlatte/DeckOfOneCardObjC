@@ -41,7 +41,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Draw Card"/>
                                         <connections>
-                                            <action selector="drawCardButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qFx-WJ-R8g"/>
+                                            <action selector="drawCardButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U4L-Tt-ixd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -63,9 +63,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="cardImageView" destination="g9w-7S-PqC" id="brh-pH-ZfK"/>
-                        <outlet property="cardLabel" destination="HUb-KF-Vqp" id="ADX-Ux-Z5f"/>
-                        <outlet property="valueLabel" destination="aia-iB-dEs" id="eXg-mw-b0C"/>
+                        <outlet property="cardImageView" destination="g9w-7S-PqC" id="x1v-HV-uJd"/>
+                        <outlet property="cardSuitLabel" destination="HUb-KF-Vqp" id="lxD-Hf-G0P"/>
+                        <outlet property="cardValueLabel" destination="aia-iB-dEs" id="I9H-YD-Hul"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

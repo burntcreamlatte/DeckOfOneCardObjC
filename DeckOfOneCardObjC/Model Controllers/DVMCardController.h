@@ -10,14 +10,14 @@
 //importing UIKit for UIImage fetch
 #import <UIKit/UIKit.h>
 //import .h file wasn't working; looked it up and telling controller to reference the actual class works?
-@class DVMCard;
+#import "DVMCard.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DVMCardController : NSObject
 
 //singleton
-+(DVMCardController *) shared;
++ (DVMCardController *) shared;
 
 //static draw card method with completion handler, nullable allows us to ignore error handling for now
 + (void) drawANewCard:(NSNumber *)numberOfCards completion:(void(^) (NSArray<DVMCard *> *_Nullable cards))completion;
